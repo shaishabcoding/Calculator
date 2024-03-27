@@ -9,9 +9,9 @@ keys.forEach((element) => {
     temp =
       key === "="
         ? eval(temp.replaceAll("×", "*").replaceAll("÷", "/"))
-        : key === "AC"
+        : key === "A"
         ? "0"
-        : key === "⌫"
+        : key === "C"
         ? temp.slice(0, -1)
         : temp + key;
     result.innerHTML = temp === "" ? "0" : temp;
